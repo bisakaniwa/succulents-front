@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { SeeAllComponent } from './see-all/see-all.component';
-import { AddComponent } from './add/add.component';
+import { AddComponent } from './profile-crud/add/add.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { SucculentComponent } from './succulent/succulent.component';
+import { UpdateProfileComponent } from './profile-crud/update-profile/update-profile.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SucculentComponent } from './succulent/succulent.component';
     SeeAllComponent,
     AddComponent,
     SucculentComponent,
+    UpdateProfileComponent,
   ],
   imports: [
     BrowserModule,

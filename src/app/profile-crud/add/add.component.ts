@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Succulent } from '../interface/succulent.interface';
-import { SucculentService } from '../service/succulent.service';
+import { Succulent } from '../../interface/succulent.interface';
+import { SucculentService } from '../../service/succulent.service';
 
 @Component({
   selector: 'app-add',

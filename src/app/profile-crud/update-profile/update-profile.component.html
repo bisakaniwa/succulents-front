@@ -1,0 +1,37 @@
+<h2> Update {{ succulent.genre }} {{ succulent.species }}'s profile </h2>
+
+<form>
+    <article>
+        <label> Genre: </label>
+        <input [(ngModel)]="succulent.genre" type="text" placeholder="Succulent genre">
+    </article>
+
+    <article>
+        <label> Species: </label>
+        <input [(ngModel)]="succulent.species" type="text" placeholder="Succulent species">
+    </article>
+
+    <article>
+        <label> Peculiarity: </label>
+        <input [(ngModel)]="succulent.peculiarity" type="text" placeholder="Any peculiarities?">
+    </article>
+
+    <article>
+        <label> Popular name: </label>
+        <input [(ngModel)]="succulent.popularName" type="text" placeholder="Does it have a popular name?">
+    </article>
+
+    <article>
+        <label> Reference image: </label>
+        <input [(ngModel)]="succulent.referenceImage" type="text" placeholder="Succulent image URL">
+    </article>
+
+    <article>
+        <label> Extra: </label>
+        <input [(ngModel)]="succulent.extra" type="text" placeholder="Any extra details?">
+    </article>
+
+    <div class="buttons">
+        <button type="submit"> That's it! </button>
+    </div>
+</form>

@@ -24,4 +24,8 @@ export class SucculentService {
     return this.http.post<Succulent>(`${this.succulentUrl}/`, succulent)
   }
 
+  update(succulent: Succulent) : Observable<Succulent> {
+    return this.http.put<Succulent>(`${this.succulentUrl}/update/`, succulent)
+  }
+
 }
