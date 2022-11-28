@@ -1,0 +1,37 @@
+<h2> Add a new succulent </h2>
+
+<form (ngSubmit)="save(succulent)" [formGroup]="addForm">
+    <article>
+        <label> Genre: </label>
+        <input formControlName="genre" type="text" placeholder="Succulent genre">
+    </article>
+
+    <article>
+        <label> Species: </label>
+        <input formControlName="species" type="text" placeholder="Succulent species">
+    </article>
+
+    <article>
+        <label> Peculiarity: </label>
+        <input formControlName="peculiarity" type="text" placeholder="Any peculiarities?">
+    </article>
+
+    <article>
+        <label> Popular name: </label>
+        <input formControlName="popularName" type="text" placeholder="Does it have a popular name?">
+    </article>
+
+    <article>
+        <label> Reference image: </label>
+        <input formControlName="referenceImage" type="text" placeholder="Succulent image URL">
+    </article>
+
+    <article>
+        <label> Extra: </label>
+        <input formControlName="extra" type="text" placeholder="Any extra details?">
+    </article>
+
+    <div class="buttons">
+        <button type="submit"> That's it! </button>
+    </div>
+</form>

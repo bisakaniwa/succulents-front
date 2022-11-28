@@ -1,0 +1,11 @@
+<h2> All my succulents: </h2>
+
+<ul>
+    <article *ngFor="let succulent of succulents">
+        <li>
+            <a [routerLink]="['../single-plant/', succulent.id]">
+                {{ succulent.genre }} {{ succulent.species }}
+            </a>
+        </li>
+    </article>
+</ul>
