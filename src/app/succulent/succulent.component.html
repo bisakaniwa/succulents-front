@@ -1,1 +1,19 @@
-<p>succulent works!</p>
+<h2> {{ succulent.genre }} {{ succulent.species }} </h2>
+
+<div class="profileSection">
+    <div class="picture">
+        <img src="{{ succulent.referenceImage }}">
+        <div class="buttons">
+            <button type="button" routerLink="updateProfile"> Update profile </button>
+            <button type="button"> Delete succulent </button>
+        </div>
+    </div>
+    <h3> Profile: </h3>
+    <li>
+        <section> Genre: {{ succulent.genre }} </section>
+        <section> Species: {{ succulent.species }} </section>
+        <section *ngIf="succulent.peculiarity"> Peculiarity: {{ succulent.peculiarity }} </section>
+        <section *ngIf="succulent.popularName"> Popular name: {{ succulent.popularName }} </section>
+        <section *ngIf="succulent.extra"> Extra info: {{ succulent.extra }} </section>
+    </li>
+</div>

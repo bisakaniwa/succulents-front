@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Succulent } from '../interface/succulent.interface';
 
 @Component({
   selector: 'app-succulent',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./succulent.component.scss']
 })
 export class SucculentComponent implements OnInit {
+
+  succulent: Succulent = {} as Succulent
 
   constructor() { }
 
